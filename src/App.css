@@ -1,19 +1,20 @@
 .App {
+  border: 1px outset rgb(87, 188, 255);
+  background-color: lightblue;
+  text-align: center;
+  /* background-color: rgb(199, 56, 255); */
+}
+.myDiv {
+  border: 1px outset rgb(87, 188, 255);
+  background-color: lightblue;
   text-align: center;
 }
-
 .Discription{
-
   height : 120px;
   width : 480px;
 }
-.AddTodoBtn{
-  
-  height : 200px;
-  width : 500px;
-}
-.Title{
 
+.Title{
   height : 50px;
   width : 330px;
   margin-bottom: 20px;
