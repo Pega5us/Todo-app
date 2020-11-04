@@ -15,6 +15,7 @@ import Typography from '@material-ui/core/Typography';
 
 
 const useStyles = makeStyles((theme) => ({
+
   modal: {
     display: 'flex',
     alignItems: 'center',
@@ -39,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     margin : theme.spacing(1),
     position: 'relative',
   },
-  root: {
+  discriptionCard: {
     width: 400,
   },
   ModalClose:{
@@ -124,7 +125,7 @@ function Todo(props) {
             timeout: 700,
         }}>
         <fade>
-          <Card className={classes.root}>
+          <Card className={classes.discriptionCard}>
         <CardContent>
         <Typography variant="body1" component="p">
           <b>Title - </b>{title}
@@ -150,7 +151,7 @@ function Todo(props) {
             timeout: 700,
         }}>
         <fade>
-        <div className = {classes.paper}>
+        <div className = {classes.paper} >
         <form>
         <FormControl>
          <TextField 
