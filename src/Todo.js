@@ -196,7 +196,7 @@ function Todo(props) {
                     <RadioButtonUncheckedIcon style = {{color : '#ffcc00', fontSize:50}}/>
                 </Fab>}
                 </div>
-                <ListItemText onClick = {handleOpenDiscriptionModal} primary = {props.todo.todo} secondary = {props.todo.discription.substring(0,Math.min(60,props.todo.discription.length))+"..."} />
+                <ListItemText onClick = {handleOpenDiscriptionModal} primary = {props.todo.todo.substring(0,Math.min(60,props.todo.todo.length)) + ((props.todo.todo.length > 60) ? "..." : "")} secondary = {props.todo.discription.substring(0,Math.min(60,props.todo.discription.length))+ ((props.todo.discription.length > 60) ? "..." : "")} />
                 <Button onClick = {handleOpen} variant = "contained" color = "primary" size = 'small'
                 startIcon={<EditIcon />} >Edit</Button>
                 <Button
