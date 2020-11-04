@@ -118,7 +118,7 @@ function CompletedTodo(props) {
                 <Fab size = "small" className={buttonClassname}  onClick = { updateIsDone }>
                     <CheckIcon style = {{color : '#ffffff'}}/>
                 </Fab>
-                <ListItemText onClick = {handleOpenDiscriptionModal} primary = {props.todo.todo} secondary = {props.todo.discription.substring(0,Math.min(60,props.todo.discription.length))+"..."} />
+                <ListItemText onClick = {handleOpenDiscriptionModal} primary = {props.todo.todo.substring(0,Math.min(60,props.todo.todo.length)) + ((props.todo.todo.length > 60) ? "..." : "")} secondary = {props.todo.discription.substring(0,Math.min(60,props.todo.discription.length))+ ((props.todo.discription.length > 60) ? "..." : "")} />
                 <Button
                     variant="contained"
                     color="secondary" 
