@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'relative',
   },
   root: {
-    minWidth: 400,
+    width: 400,
   },
   ModalClose:{
     marginLeft: 'auto'
@@ -127,10 +127,10 @@ function Todo(props) {
           <Card className={classes.root}>
         <CardContent>
         <Typography variant="body1" component="p">
-          <b>Title - </b>{props.todo.todo}
+          <b>Title - </b>{title}
         </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
-        <p><span style = {{color : '#000000'}}><b>Discription - </b></span>{props.todo.discription}</p>
+        <p><span style = {{color : '#000000'}}><b>Discription - </b></span>{discription}</p>
         </Typography>
       </CardContent>
       <CardActions>
